@@ -24,11 +24,16 @@
     </div>
     <main class="content">
         <div class="text-container">
-            <input id="display" id='appendtodisplay' readonly>
             <p>The first mass is: <span id="mass1"></span></p>
-            <button id="seeAnswerButton">See Answer</button>
-            <p>The answer is: <span id="bpaccres"></span></p>
+            <p>The second mass is: <span id="mass2"></span></p>
+            <p>What is the acceleration of the first mass?</p>
 
+            <button id="seeAnswerButton">Toggle Answer</button>
+            <button onclick="basicpulleyacc()">Reset Mass Values</button>
+
+            <div id="answerWrapper" class="hidden">
+                The answer is: <span id="bpaccres"></span>
+            </div>
         </div>
         <script src="index.js"></script>
     </main>
